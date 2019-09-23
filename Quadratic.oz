@@ -24,3 +24,15 @@ proc {QuadraticEquation A B C ?RealSol ?X1 ?X2}
   end
 end
 
+/**
+ * @brief      Task 4 solution. Creates a function of the form f(x)= ax^2+bx+c
+ *
+ * @param[in]  A       The value multiplied by x^2
+ * @param[in]  B       The value multiplied by x
+ * @param[in]  C       The constant value
+ *
+ * @return     An anonymus function taking x as an argument.
+ */
+fun {Quadratic A B C}
+  fun {$ X} A*X*X + B*X + C end 
+end

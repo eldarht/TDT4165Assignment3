@@ -32,8 +32,9 @@ define
   {System.show {RightFold [1 2 3 4] fun {$ A B} 1 + B end 0}}
   {System.printInfo "\tcalculating Sum on [1,2,3,4]:    "}
   {System.show {RightFold [1 2 3 4] fun {$ A B} A + B end 0}}
-
-
+  {System.showInfo "========================"}
+  {System.showInfo "Task 4"}
+  {System.showInfo "\tThe quadratic function with a = 3, b = 2, c = 1 and x = 2: "# {{Quadratic 3 2 1}2}}
   {System.showInfo "========================"}
 
 
