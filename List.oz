@@ -45,7 +45,7 @@ fun {SumTail List Operand}
 end
 
 /**
- * @brief      Creates a single value from a list based on given function
+ * @brief      Task 3.a Creates a single value from a list based on given function
  *
  * @param      List  The list
  * @param      Op    The operation
@@ -63,7 +63,7 @@ end                                 % End of function. The function should start
 
 
 /**
- * @brief      Creates a tuple with the number given as parameter as its first value and the second value being a function that returns the following number and its function for folllowing numbers.
+ * @brief      Task 5.a Creates a tuple with the number given as parameter as its first value and the second value being a function that returns the following number and its function for folllowing numbers.
  *
  * @param      StartValue  The start value
  *
