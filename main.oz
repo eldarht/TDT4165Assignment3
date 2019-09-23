@@ -4,6 +4,7 @@ import
   System 
 define
   \insert Quadratic.oz
+  \insert List.oz
 
   Solution1 X1A X2A 
   Solution2 X1B X2B in
@@ -19,7 +20,9 @@ define
   {System.showInfo "\tA = 2s, B = 1 C = 2"}
   {System.showInfo "\tHas solution: "# if Solution2 then "true" else "false" end #"\n\t\tRoot1: "# X1B #"\n\t\tRoot2: "# X2B}
   {System.showInfo "========================"}
- 
+  {System.showInfo "Task 2"}
+  {System.showInfo "\tThe sum of the elements in [1,2,3] is: "# {Sum [1 2 3]}}
+  {System.showInfo "========================"}
 
   {Application.exit 0}
 end
