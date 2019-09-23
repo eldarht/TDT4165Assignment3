@@ -27,3 +27,13 @@ e) What is a good value for U when using RightFold to implement the product of l
 ```
 U should be 1 as a * 1 = a. U should not have an effect other than returning the other operand itself.
 ```
+
+## Task 5
+b) Give a high-level description of your solution and point out any limitations you find relevant.
+
+```
+The function as I have implemented it returns the input number and a function wrapped in a tuple. The function is equivalent to the LazyNumberGenerator function but has no output. Instead the input is replaced by changing the actual implimentation with one calling the LazyNumberGenerator with the next number to return, so that it returns the relevant number and a function that again returns the next number. 
+
+Limitations:
+The function does not really return a list as the task asks for but one that can generate one. It is not possible to call it with {LazyNumberGenerator 0}.2.2.2.2.1 like a list, as the function would have to be called.
+```

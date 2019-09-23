@@ -45,3 +45,15 @@ fun {RightFold List Op U}           % Defines the function
     U                               % Return the element that won't change the value when calling the operation on it and the preceeding value in the list.
   end                               % No other pattern that may match the list is relevant
 end                                 % End of function. The function should start at the end of the list as {RightFold T Op U} needs to be evaluated before before the surrounding {Op} call 
+
+
+/**
+ * @brief      Creates a tuple with the number given as parameter as its first value and the second value being a function that returns the following number and its function for folllowing numbers.
+ *
+ * @param      StartValue  The start value
+ *
+ * @return     tupe with number and function returning the same as this function.
+ */
+fun {LazyNumberGenerator StartValue}
+  tree(StartValue fun {$} {LazyNumberGenerator StartValue+1} end)
+end

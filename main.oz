@@ -35,6 +35,12 @@ define
   {System.showInfo "========================"}
   {System.showInfo "Task 4"}
   {System.showInfo "\tThe quadratic function with a = 3, b = 2, c = 1 and x = 2: "# {{Quadratic 3 2 1}2}}
+  {System.showInfo "========================"}  
+  {System.showInfo "Task 5"}
+  {System.showInfo "\tLazyNumberGenerator starting at 0:"}
+  {System.showInfo "\t\t {LazyNumberGenerator 0}.1}:                    "# {LazyNumberGenerator 0}.1}
+  {System.showInfo "\t\t {{LazyNumberGenerator 0}.2}.1}:                "# {{LazyNumberGenerator 0}.2}.1}
+  {System.showInfo "\t\t {{{{{{LazyNumberGenerator 0}.2}.2}.2}.2}.2}.1: "# {{{{{{LazyNumberGenerator 0}.2}.2}.2}.2}.2}.1}
   {System.showInfo "========================"}
 
 
