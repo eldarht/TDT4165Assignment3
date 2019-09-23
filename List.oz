@@ -30,6 +30,21 @@ fun {Sum List}
 end
 
 /**
+ * @brief      Task 6.a solution. Sums the elements in the list.
+ *
+ * @param      List  The list
+ *
+ * @return     The sum of all the elements in the list (excluding nil)
+ */
+fun {SumTail List Operand}
+  case List of H|T then
+    {SumTail T H+Operand}
+  else
+    Operand
+  end
+end
+
+/**
  * @brief      Creates a single value from a list based on given function
  *
  * @param      List  The list

@@ -42,7 +42,9 @@ define
   {System.showInfo "\t\t {{LazyNumberGenerator 0}.2}.1}:                "# {{LazyNumberGenerator 0}.2}.1}
   {System.showInfo "\t\t {{{{{{LazyNumberGenerator 0}.2}.2}.2}.2}.2}.1: "# {{{{{{LazyNumberGenerator 0}.2}.2}.2}.2}.2}.1}
   {System.showInfo "========================"}
-
+  {System.showInfo "Task 6"}
+  {System.showInfo "\tTail recursive sum of the elements in [1,2,3] is:"# {SumTail [1 2 3] 0}}
+  {System.showInfo "========================"}
 
   {Application.exit 0}
 end
