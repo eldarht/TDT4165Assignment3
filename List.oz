@@ -28,3 +28,20 @@ fun {Sum List}
     0
   end
 end
+
+/**
+ * @brief      Creates a single value from a list based on given function
+ *
+ * @param      List  The list
+ * @param      Op    The operation
+ * @param      U     The neutral unit
+ *
+ * @return     { description_of_the_return_value }
+ */
+fun {RightFold List Op U}           % Defines the function
+  case List of H|T then             % Splits the list into first element and the rest
+    {Op H {RightFold T Op U}}       % Calls the operation with the first element and the result of the operation on each following pair of values
+  else                              % Whene there is no more elements
+    U                               % Return the element that won't change the value when calling the operation on it and the preceeding value in the list.
+  end                               % No other pattern that may match the list is relevant
+end                                 % End of function. The function should start at the end of the list as {RightFold T Op U} needs to be evaluated before before the surrounding {Op} call 

@@ -23,6 +23,19 @@ define
   {System.showInfo "Task 2"}
   {System.showInfo "\tThe sum of the elements in [1,2,3] is: "# {Sum [1 2 3]}}
   {System.showInfo "========================"}
+  {System.showInfo "Task 3"}
+  {System.showInfo "a)"}
+  {System.printInfo "\tRightFold with multiplication on [1,2,3,4] with neutral element 1: "}
+  {System.show {RightFold [1 2 3 4] fun {$ A B} A * B end 1}}
+  {System.showInfo "c)"}
+  {System.printInfo "\tcalculating Length on [1,2,3,4]: "}
+  {System.show {RightFold [1 2 3 4] fun {$ A B} 1 + B end 0}}
+  {System.printInfo "\tcalculating Sum on [1,2,3,4]:    "}
+  {System.show {RightFold [1 2 3 4] fun {$ A B} A + B end 0}}
+
+
+  {System.showInfo "========================"}
+
 
   {Application.exit 0}
 end
